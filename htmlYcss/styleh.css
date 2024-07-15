@@ -120,6 +120,7 @@ footer .container .sec p {
 
 .info {
     position: relative;
+    padding: 0;
 }
 
 .info li {
