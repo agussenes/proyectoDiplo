@@ -1,18 +1,33 @@
-
-*{
+/* •---------------------GENERAL---------------------• */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
-/* navBar responsive */
+
+body {
+    display: grid;
+    /* justify-content: end; */
+    align-content: end;
+    min-height: 0;
+
+}
+
+
+/* •---------------------FIN-GENERAL---------------------• */
+
+
+
+/* •---------------------NAVBAR---------------------• */
+
 
 .navBar {
     background-color: #62F3A8;
     height: 4rem;
-    padding: 0.3rem;
+    padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,10 +45,10 @@
 
 .buscador {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    
-     
+
+
 }
 
 .menuIcon {
@@ -45,7 +60,7 @@
 }
 
 .menuIcon .fas {
-    color:#000;
+    color: #000;
 
 }
 
@@ -61,7 +76,7 @@
 
 .navLinks.show {
     display: flex;
-    
+
 
 }
 
@@ -77,19 +92,19 @@
     padding: 5px;
     font-size: 1.2rem;
     transition: background-color 0.3s;
-    
-
-    }
-    
-    a:hover {
-        background-color: #dbea9f;
-        text-decoration: underline;
-        cursor: pointer;
-    
-    }
 
 
-    @media screen and (min-width: 801px) {
+}
+
+a:hover {
+    background-color: #dbea9f;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+@media screen and (min-width: 801px) {
 
     .menuIcon {
         display: none;
@@ -139,7 +154,7 @@
             display: none;
             margin-right: 1rem;
         }
-    
+
         .navLinks {
             display: flex;
             flex-direction: row;
@@ -148,18 +163,19 @@
             padding: 0;
             background-color: #62F3A8;
         }
-    
+
         .navLinks li {
             margin: 0 20px;
             list-style-type: none;
         }
+
         @media screen and (max-width: 1001px) {
 
             .menuIcon {
                 display: none;
                 margin-right: 1rem;
             }
-        
+
             .navLinks {
                 display: flex;
                 flex-direction: row;
@@ -168,29 +184,187 @@
                 padding: 0;
                 background-color: #62F3A8;
             }
-        
+
             .navLinks li {
                 margin: 0 20px;
                 list-style-type: none;
             }
-    
+
         }
 
     }
 }
 
+/* •---------------------FIN-NAVBAR---------------------• */
 
-/* body */
 
-body {
+
+/* •---------------------SECCION-1---------------------• */
+section1 {
+    padding: 10PX;
+    background-color: rgba(190, 231, 227, 0);
+}
+
+
+
+/* •---------------------FIN-SECCION-1---------------------• */
+
+section2 {
+    padding: 10PX;
+    background-color: rgb(255, 255, 255);
+}
+
+/* animar fondo con un gradiente */
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.containerAccion {
+    padding: 50PX 100px;
     display: grid;
-    /* justify-content: end; */
-    align-content: end;
-    min-height: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+    background: linear-gradient(45deg, #bbafaf, #2a2294, #ff0202);
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease infinite;
+}
+
+.accion {
+    display: flex; /* Cambiar a flexbox para centrar los contenidos */
+    flex-direction: column;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+   
+}
+
+.accion img {
+    max-width: 200px; /* Ajustar al contenedor */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+
+
+.accion h3 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #ffffff;
     
 }
 
-/* footer */
+.accion h3:hover{
+    color: #ff5151;
+}
+
+.accion:hover{
+   border: 2px;
+   border-color: #2a2294,;
+   border-style: solid;
+   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+
+}
+
+.containerProductos{
+    padding: 50PX 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-content:center ;
+}
+
+@keyframes lightEffect {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.product{
+    display: flex; /* Cambiar a flexbox para centrar los contenidos */
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+    border-radius: 15px;
+    height: auto;
+    background: radial-gradient(circle, #bbafaf, rgba(14, 0, 78, 0.712) 60%);
+    background-size: 150% 150%;
+    animation: lightEffect 10s infinite ease-in-out;
+    padding: 10px;
+ 
+}
+
+.product h2{
+    font-size: 27px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.product p{
+    color: floralwhite;
+}
+.product h2:hover{
+    color: #ff5151;
+}
+
+
+.product:hover{
+    box-shadow: 0px 4px 16px rgba(255, 6, 6, 0.25);
+}
+
+.product img{
+    max-width: 100%; /* Ajustar al contenedor */
+    height: auto; /* Mantener proporción de la imagen */
+    border-radius: 15px;
+    margin:0px;
+  
+
+}
+
+.product img:hover{
+    box-shadow: 0px 4px 16px rgba(250, 0, 0, 0.25);
+}
+
+.product p{
+    font-size: 14px;
+}
+
+.product button{
+    position:static;
+    align-content: end;
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    color: floralwhite;
+    border-color: floralwhite;
+
+.containerButton{
+    justify-content: end;
+    align-content: end;
+}
+/* •---------------------SECCION-2---------------------• */
+
+
+
+
+/* •---------------------FIN-SECCION-2--------------------• */
+
+
+
+/* •---------------------FOOTER---------------------• */
 
 footer {
     position: relative;
@@ -264,14 +438,14 @@ footer .container .sec p {
 
 .atajos {
     position: relative;
-    
+
 
 
 }
 
 .atajos li {
     list-style: none;
-    
+
 }
 
 .atajos li a {
@@ -279,7 +453,7 @@ footer .container .sec p {
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
-    
+
 
 }
 
@@ -289,7 +463,7 @@ footer .container .sec p {
 
 .atajos ul {
     text-align: left;
-    padding:0;
+    padding: 0;
 }
 
 .info {
@@ -349,3 +523,6 @@ footer .container .sec p {
 
     }
 }
+
+
+/* •----------------------FiN-Footer---------------------• */
