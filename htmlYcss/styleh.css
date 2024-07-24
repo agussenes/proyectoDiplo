@@ -226,6 +226,7 @@ section1 {
 .containerBio h2 {
     text-align: center;
     padding: 20px;
+    font-weight: bold;
 }
 
 .containerBio ul {
