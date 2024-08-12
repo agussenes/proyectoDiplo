@@ -730,7 +730,6 @@ footer .container .sec p {
 
 }
 
-
 @media screen and (min-width: 801px) {
 
     /* navBar */
@@ -771,7 +770,7 @@ footer .container .sec p {
     /* section2 */
 
     section1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .containerAccion {
@@ -815,99 +814,104 @@ footer .container .sec p {
 
     }
 
+}
 
-    @media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
 
-        /* navBar */
+    /* navBar */
 
-        #menuIcon {
-            display: none;
-            margin-right: 1rem;
-        }
+    #menuIcon {
+        display: none;
+        margin-right: 1rem;
+    }
 
-        #navLinks {
-            display: flex;
-            flex-direction: row;
-            position: static;
-            width: 100%;
-            background-color: #62F3A8;
-            padding-left: 13.5rem;
-
-
-
-        }
-
-        #navLinks li {
-            width: 100%;
-            gap: 2rem;
-            list-style-type: none;
-            object-fit: cover;
+    #navLinks {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: 100%;
+        background-color: #62F3A8;
+        padding-left: 13.5rem;
 
 
-        }
 
-        #brand {
+    }
 
-            align-items: baseline;
-            width: 100%;
+    #navLinks li {
+        width: 100%;
+        gap: 2rem;
+        list-style-type: none;
+        object-fit: cover;
 
 
-        }
+    }
+
+    #brand {
+
+        align-items: baseline;
+        width: 100%;
 
 
-        /* section1 */
+    }
 
-        .container-fluid {
-            width: 100%;
-        }
 
-        .containerCarousel {
-            width: 100%;
-        }
+    /* section1 */
 
-        .containerBio {
-            width: 100%;
-        }
+    sectio1 {
+        grid-template-columns: 1fr 1fr;
+    }
 
-        /* section2 */
+    .container-fluid {
+        width: 100%;
+    }
 
-        .containerAccion {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            height: auto;
-        }
+    .containerCarousel {
+        width: 100%;
+    }
 
-        .containerProductos {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
+    .containerBio {
+        width: 100%;
+    }
 
-        /* footer */
+    /* section2 */
 
-        footer {
-            padding: 40px;
-        }
+    .containerAccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+    }
 
-        footer .container {
-            grid-template-columns: repeat(4, 1fr);
-        }
+    .containerProductos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
-        .copyrightsec {
-            padding: 8px 40px;
-        }
+    /* footer */
 
-        /* formulario*/
+    footer {
+        padding: 40px;
+    }
 
-        .containerFormulario {
-            display: flex;
-            justify-content: center;
+    footer .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
-        }
+    .copyrightsec {
+        padding: 8px 40px;
+    }
 
-        #imgProducto {
-            margin: 0 1.3rem;
-            width: auto;
+    /* formulario*/
 
-        }
+    .containerFormulario {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #imgProducto {
+        margin: 0 1.3rem;
+        width: auto;
+
     }
 }
+
