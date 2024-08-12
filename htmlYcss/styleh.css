@@ -1,19 +1,20 @@
 /* •---------------------GENERAL---------------------• */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
 }
 
 
 body {
     display: grid;
-    /* justify-content: end; */
     align-content: end;
     min-height: 0;
-
 }
 
 
@@ -26,7 +27,7 @@ body {
 
 #navBar {
     background-color: #62F3A8;
-    height: 3.6rem;
+    height: auto;
     padding-top: 1.2rem;
     display: inline-flex;
     flex-direction: column;
@@ -128,15 +129,20 @@ a:hover {
 /* •---------------------SECCION-1---------------------• */
 section1 {
     background-color: rgba(0, 240, 32, 0);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
 }
 
+#contenedorCar{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .container-fluid {
-    background: linear-gradient(45deg, #bbafaf, #2a2294, #ff0202);
+    background-color:rgb(187, 238, 93);
     background-size: 200% 200%;
-    animation: gradientMove 8s ease infinite;
     padding: 10px;
 }
 
@@ -145,7 +151,7 @@ section1 {
 }
 
 .containerBio {
-    background-color: #77f1b2;
+    background-color:rgb(187, 238, 93);
     padding: 0px 100px;
 }
 
@@ -212,12 +218,9 @@ section2 {
 
 .accion {
     display: flex;
-    /* Cambiar a flexbox para centrar los contenidos */
     flex-direction: column;
     justify-content: center;
-    /* Centrar horizontalmente */
     align-items: center;
-    /* Centrar verticalmente */
     text-align: center;
     position: relative;
     border-radius: 15px;
@@ -226,9 +229,7 @@ section2 {
 
 .accion img {
     max-width: 200px;
-    /* Ajustar al contenedor */
-    height: auto;
-    /* Mantener proporción de la imagen */
+    
 }
 
 
@@ -273,16 +274,13 @@ section2 {
 
 .product {
     display: flex;
-    /* Cambiar a flexbox para centrar los contenidos */
     flex-direction: column;
     align-items: center;
-    /* Centrar verticalmente */
     text-align: center;
     border-radius: 15px;
     height: auto;
-    background: radial-gradient(circle, #ff0202, rgba(14, 0, 78, 0.712) 60%);
+    background-color: #2bd1c9ef;
     background-size: 150% 150%;
-    animation: lightEffect 10s infinite ease-in-out;
     padding: 10px;
 
 }
@@ -333,7 +331,7 @@ section2 {
     margin: 5px;
     padding: 5px;
     color: floralwhite;
-    border-color: floralwhite;
+    border: 2px solid #ffffff;
 }
 
 .containerButton {
@@ -562,6 +560,91 @@ footer .container .sec p {
 
 /* •--------------------------------- Responsive -------------------------------• */
 
+@media screen and (max-width: 500px) {
+
+    /* navBar */
+
+    #menuIcon {
+        display: none;
+        margin-right: 1rem;
+    }
+
+    #navLinks {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: #62F3A8;
+    }
+
+    #navLinks li {
+        margin: 0 20px;
+        list-style-type: none;
+    }
+
+    /* section1 */
+
+    section1 {
+        grid-template-columns: 1fr;
+    }
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .containerCarousel {
+        width: 100%;
+    }
+
+    .containerBio {
+        width: 100%;
+    }
+
+    /* section2 */
+
+    .containerAccion {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .containerProductos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* footer*/
+
+    footer .container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /* formulario */
+
+    .containerFormulario {
+        justify-items: center;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    #imgProducto {
+        margin: 0 1.3rem;
+        width: auto;
+
+    }
+
+    .containerFormulario form button {
+        justify-self: center;
+    }
+
+}
+
 @media screen and (min-width: 501px) {
 
     /* navBar */
@@ -586,6 +669,10 @@ footer .container .sec p {
     }
 
     /* section1 */
+
+    section1 {
+        grid-template-columns: 1fr;
+    }
 
     .container-fluid {
         width: 100%;
@@ -682,6 +769,10 @@ footer .container .sec p {
     }
 
     /* section2 */
+
+    section1 {
+        grid-template-columns: 1fr;
+    }
 
     .containerAccion {
         display: grid;
