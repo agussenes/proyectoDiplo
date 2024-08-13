@@ -1,0 +1,39 @@
+#productosApi{
+    padding-right: 150px;
+    padding-left: 150px;
+    background-color: #8078e9;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.producto-container {
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto-container button{
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    background-color: #f8f676;
+}
+
+.producto-container img {
+    width: 100PX;
+    height: auto;
+}
+
+.producto-container h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.producto-container p {
+    font-size: 1em;
+    color: #555;
+}

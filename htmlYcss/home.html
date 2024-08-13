@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleh.css">
+    <link rel="stylesheet" href="./styleApi.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -23,43 +24,53 @@
     <header>
 
         <div id="brand">
-           <a href="#"><img src="../imagenes/loco connombreOK.png" alt="Cururu"></a>
+            <a href="#"><img src="../imagenes/loco connombreOK.png" alt="Cururu"></a>
         </div>
-           
+
 
         <nav id="navBar">
-             
+
             <div id="menuIcon">
                 <i class="fas fa-bars"></i>
             </div>
-    
+
             <ul id="navLinks">
-    
+
                 <li><a href="#"><i class="fa-solid fa-frog"></i> Inicio</a></li>
                 <li><a href="#"><i class="fa-solid fa-store"></i> Productos</a></li>
                 <li><a href="#"><i class="fa-solid fa-people-group"></i> Nosotros</a></li>
                 <li><a href="#"><i class="fa-solid fa-headset"></i></i> Contacto</a></li>
                 <li><a href="#"><i class="fa-regular fa-circle-user"></i> Usuário</a></li>
                 <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></i> Carrito</a></li>
-    
+
             </ul>
-    
+
         </nav>
 
     </header>
-    
+
 
 
     <section1>
         <div class="containerBio">
             <h2>Nuestro actuar esta determinado por nuestros valores</h2>
             <ul>
-                <li><strong>Pasión por la Educación:</strong> En Cururu, creemos que la educación es el pilar fundamental del desarrollo infantil. Nos apasiona crear materiales educativos que fomenten el aprendizaje autónomo y significativo.</li>
-                <li><strong>Diseño Innovador:</strong> Nos comprometemos a diseñar productos únicos y creativos que inspiren a los niños a explorar y descubrir el mundo que los rodea. La innovación es una constante en nuestro proceso de diseño.</li>
-                <li><strong>Calidad y Sostenibilidad:</strong> Cada pieza de Cururu es fabricada con materiales de alta calidad y procesos sostenibles. Valoramos el uso de recursos renovables y la producción responsable para cuidar del medio ambiente y ofrecer productos duraderos.</li>
-                <li><strong>Amor y Dedicación:</strong> Ponemos el corazón en cada uno de nuestros productos. Creemos en la importancia del cuidado y la dedicación en la creación de materiales que acompañen el crecimiento de los niños.</li>
-                <li><strong>Fomento de la Creatividad:</strong> Nos esforzamos por crear juguetes y muebles que estimulen la imaginación y la creatividad de los niños, permitiéndoles expresarse libremente y desarrollar sus habilidades únicas.</li>
-             </ul>
+                <li><strong>Pasión por la Educación:</strong> En Cururu, creemos que la educación es el pilar
+                    fundamental del desarrollo infantil. Nos apasiona crear materiales educativos que fomenten el
+                    aprendizaje autónomo y significativo.</li>
+                <li><strong>Diseño Innovador:</strong> Nos comprometemos a diseñar productos únicos y creativos que
+                    inspiren a los niños a explorar y descubrir el mundo que los rodea. La innovación es una constante
+                    en nuestro proceso de diseño.</li>
+                <li><strong>Calidad y Sostenibilidad:</strong> Cada pieza de Cururu es fabricada con materiales de alta
+                    calidad y procesos sostenibles. Valoramos el uso de recursos renovables y la producción responsable
+                    para cuidar del medio ambiente y ofrecer productos duraderos.</li>
+                <li><strong>Amor y Dedicación:</strong> Ponemos el corazón en cada uno de nuestros productos. Creemos en
+                    la importancia del cuidado y la dedicación en la creación de materiales que acompañen el crecimiento
+                    de los niños.</li>
+                <li><strong>Fomento de la Creatividad:</strong> Nos esforzamos por crear juguetes y muebles que
+                    estimulen la imaginación y la creatividad de los niños, permitiéndoles expresarse libremente y
+                    desarrollar sus habilidades únicas.</li>
+            </ul>
         </div>
 
         <div class="container-fluid" id="contenedorCar">
@@ -144,12 +155,15 @@
             </div>
         </div>
     </section2>
+
+    <!-- api -->
+
     <section class="secProductosApi">
-        <div id="productosApi">
-
-        </div>
-
+        <div id="productosApi"></div>
     </section>
+
+
+
     <footer>
         <div class="container">
             <div class="sec QuienesSomos">
@@ -211,6 +225,9 @@
     <div class="copyrightsec">
         <p>&copy; Agus - Noe - Patri. Todos los derechos reservados</p>
     </div>
-</body>
 
+    <script src="../js/conexionApi.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+    
 </html>

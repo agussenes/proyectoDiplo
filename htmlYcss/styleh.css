@@ -184,11 +184,8 @@ section1 {
 
 /* •---------------------SECCION-2---------------------• */
 section2 {
-    /* padding: 10PX; */
     background-color: rgba(255, 255, 255, 0);
 }
-
-/* animar fondo con un gradiente */
 
 @keyframes gradientMove {
     0% {
@@ -210,7 +207,7 @@ section2 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     height: 100vh;
-    background: linear-gradient(45deg, #bbafaf, #2a2294, #ff0202);
+    background: linear-gradient(45deg, #cae272, #8078e9, #35b335);
     background-size: 200% 200%;
     animation: gradientMove 8s ease infinite;
 
@@ -259,7 +256,7 @@ section2 {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     align-content: center;
-    background-color: #77f1b2;
+    background-color:rgb(187, 238, 93);
 }
 
 @keyframes lightEffect {
@@ -279,7 +276,7 @@ section2 {
     text-align: center;
     border-radius: 15px;
     height: auto;
-    background-color: #2bd1c9ef;
+    background-color: #8078e9;
     background-size: 150% 150%;
     padding: 10px;
 
@@ -306,9 +303,7 @@ section2 {
 
 .product img {
     max-width: 100%;
-    /* Ajustar al contenedor */
     height: auto;
-    /* Mantener proporción de la imagen */
     border-radius: 15px;
     margin: 0px;
 
