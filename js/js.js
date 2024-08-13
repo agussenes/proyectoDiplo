@@ -1,6 +1,5 @@
-<script>
-                document.querySelector('.menu-icon').addEventListener('click', function () {
-                document.querySelector('nav-links').classList.toggle('show');
-                });
-                
-            </script>
+    document.querySelector('#menuIcon').addEventListener ('click', function() {
+    document.querySelector('#navLinks').classList.toggle('show');
+    });
+    
+            

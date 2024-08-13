@@ -14,18 +14,30 @@ body {
     align-content: end;
     min-height: 0;
 
+    
+
 }
 
 
 /* •---------------------FIN-GENERAL---------------------• */
-
-
 
 /* •---------------------NAVBAR---------------------• */
 
 
 #navBar {
     background-color: #62F3A8;
+    padding: 1rem;
+    display: flex;
+    justify-content:first baseline;
+    height: 3rem;
+    align-items: center;
+   
+    
+    
+    
+}
+
+/*  background-color: #62F3A8;
     height: 3.6rem;
     padding-top: 1.2rem;
     display:inline-flex;
@@ -36,6 +48,7 @@ body {
     padding-inline: 1rem;
 
 }
+    */
 
 #brand {
     display: flex;
@@ -44,36 +57,41 @@ body {
     font-weight: bold;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 3.6rem;
+    height: 3.3rem;
     width: 100%;
-    padding-right: 3.3rem;
-    justify-content: center;
+    justify-content: baseline;
+    padding-left: 5rem;
 
 }
 
 
 
-.buscador {
+/*.buscador {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
+    */
 
 #menuIcon {
-    display: flex;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    margin-right: .5rem;
+    display: block;
     font-size: 2.4rem;
     cursor: pointer;
+    padding-left: 8.7rem;
+    
+
+
+  /*  align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-right: .5rem; 
+    */
 
 }
 
 #menuIcon .fas {
-    color: #000;
+    color: #001105;
+    
 
 }
 
@@ -81,22 +99,20 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 3.75rem;
     width: 100%;
     background-color: #0f472a;
     padding: 1rem;
-    padding-left: 1rem;
+    
 }
 
 #navLinks.show {
     display: flex;
 
-
 }
 
 #navLinks li {
     margin: 10px;
-    align-items: baseline;
     
 }
 
@@ -568,7 +584,6 @@ footer .container .sec p {
 
     #menuIcon {
         display: none;
-        margin-right: 1rem;
     }
 
     #navLinks {
@@ -576,13 +591,16 @@ footer .container .sec p {
         flex-direction: row;
         position: static;
         width: auto;
-        padding: 0;
         background-color: #62F3A8;
     }
 
     #navLinks li {
         margin: 0 20px;
         list-style-type: none;
+    }
+    
+    #navLinks a {
+        text-decoration: none;
     }
 
 /* section1 */
