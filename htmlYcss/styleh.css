@@ -128,9 +128,13 @@ a:hover {
 
 /* •---------------------SECCION-1---------------------• */
 section1 {
-    background-color: rgba(0, 240, 32, 0);
+    background-color:rgb(187, 238, 93);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 150px;
+    padding-left: 150px;
 
 }
 
@@ -141,13 +145,13 @@ section1 {
 }
 
 .container-fluid {
-    background-color:rgb(187, 238, 93);
+    
     background-size: 200% 200%;
     padding: 10px;
 }
 
 .containerCarousel {
-    padding: 0px 100px;
+    padding: 20px;
 }
 
 .containerBio {
@@ -210,6 +214,8 @@ section2 {
     background: linear-gradient(45deg, #cae272, #8078e9, #35b335);
     background-size: 200% 200%;
     animation: gradientMove 8s ease infinite;
+    padding-right: 150px;
+    padding-left: 150px;
 
 }
 
@@ -251,7 +257,10 @@ section2 {
 }
 
 .containerProductos {
-    padding: 50PX 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 150px;
+    padding-left: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
