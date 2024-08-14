@@ -579,7 +579,8 @@ footer .container .sec p {
     background-color: #5449e7;
     width: 12rem;
     height: auto;
-    padding: 2rem;;
+    padding: 2rem;
+    list-style: none;
 }
 
 .containerFormsProductos {
