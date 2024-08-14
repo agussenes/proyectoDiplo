@@ -504,6 +504,8 @@ footer .container .sec p {
 
 /* •----------------- Inicio Formulário -----------------• */
 
+
+
 .containerFormulario {
     display: flex;
     flex-direction: column;
@@ -579,13 +581,14 @@ footer .container .sec p {
 
 #productosAgregados {
     display: block;
-    background-color: #5449e7;
+    background-color: #8078E9;
     border-radius: 15px;
-    width: 50%;
+    width: 25%;
     height: auto;
     padding: 2rem;
     list-style: none;
-    box-shadow: 4px 4px 10px #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #productosAgregados li{
@@ -595,6 +598,7 @@ footer .container .sec p {
     padding: 20px;
     border: 1px solid #ffffff;
     border-radius: 15px;
+    box-shadow: 4px 4px 9px #040e09a8;
 }
 
 #productosAgregados img{
@@ -613,6 +617,11 @@ footer .container .sec p {
     text-align: center;
     font-size: 26px;
     
+}
+
+#productosAgregados hr{
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
 }
 
 
@@ -672,6 +681,8 @@ footer .container .sec p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 /* •------------------------------ Final Formulario ----------------------------• */

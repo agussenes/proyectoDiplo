@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const mostrarProducto = document.createElement('li');
                 mostrarProducto.innerHTML = `
                     <img src="${producto.imgProducto}" alt="Imagen de ${producto.nombre}" width="100">
+                    <hr>
                     <h2>${producto.nombre}</h2>
                     <p>(${producto.codigo})</p>
                     <p>$${producto.precioProducto}</p>
