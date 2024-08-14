@@ -11,8 +11,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/961856c0dd.js" crossorigin="anonymous"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.4/awesome-bootstrap-checkbox.min.css"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 
@@ -51,34 +50,59 @@
     
         </header>
 
-    <section class="secFormulario">
+       <!--  <h2>Crear Nuevo Producto</h2>
+        <form id="productForm">
+            <label for="productName">Nombre del Producto:</label><br>
+            <input type="text" id="productName" name="productName" required><br><br>
+            
+            <label for="productPrice">Precio del Producto:</label><br>
+            <input type="number" id="productPrice" name="productPrice" required><br><br>
+            
+            <label for="productDescription">Descripción del Producto:</label><br>
+            <textarea id="productDescription" name="productDescription" required></textarea><br><br>
+            
+            <button type="submit">Crear Producto</button>
+        </form>
+        
+        <h2>Lista de Productos</h2>
+        <ul id="productList"></ul>  -->
+    
 
+     <section class="sectionForms">   
         <div class="containerFormulario">
 
-            <form>
+            <h2>CREAR NUEVO PRODUCTO</h2>
+            <form id="agregarProducto"> 
                 <label for="nombre">Nombre del Producto</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto" required><br><br>
               
-                <label for="codigoProducto">Código del Produto</label>
-                <input type="text" id="codigo" name="codigoProducto" placeholder="AAA000" required></input><br><br>
+                <label for="codigo">Código del Produto</label>
+                <input type="text" id="codigo" name="codigo" placeholder="AAA000" required></input><br><br>
 
-                <label for="ImagenProducto">Imagen del producto</label>
-                <input type="file" id="imgProducto" name="img producto" placeholder="Inserte la imagen" required><br><br>
+                <label for="imgProducto">Imagen del producto</label>
+                <input type="file" id="imgProducto" name="imgProducto" placeholder="Inserte la imagen"><br><br>
+            
+                <label for="precioProducto">Precio</label>
+                <input type="text" id="precioProducto" name="precioProducto" placeholder="$ 000.000" required><br><br>
 
-                <label for="Descripcion">Precio</label>
-                <input type="text" id="precioProducto" name="Precio del Producto" placeholder="$ 000,000.00" ><br><br>
-
-                <label for="Descripcion">Descripción</label>
-                <input type="text" id="descripcionProducto" name="Descripcion Producto" placeholder="Descripción del producto" ><br><br>
-
+                <label for="descripcionProducto">Descripción</label>
+                <input type="text" id="descripcionProducto" name="descripcionProducto" placeholder="Descripción del producto" required><br><br>
+                
+                
+                <button onclick="click" type="submit"> Agregar Producto </button>
         
-                <button type="submit"> Agregar Producto </button>
-        
-            </form>
+                </form>
 
+                <h2>Lista de Productos</h2>
+
+                <ul id="productosAgregados" form="agregarProducto"></ul>
+        
+                <button id="eliminarProducto" form="agregarProducto"> Eliminar Producto </button>
+            
+            
         </div>
 
-    </section>
+    </section> 
 
 
     <footer>
@@ -143,7 +167,9 @@
         <p>&copy; Agus - Noe - Patri. Todos los derechos reservados</p>
     </div>
 
-    <script src="js.js"></script>
+
+    <script src="../js/formulario.js"></script>
+
 </body>
 
 </html>

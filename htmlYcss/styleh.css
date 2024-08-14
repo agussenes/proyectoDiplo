@@ -575,6 +575,9 @@ footer .container .sec p {
     padding-top: 1.1rem;
 }
 
+#productosAgregados {
+    background-color: #2a2294;
+}
 
 
 /* •------------------------------ Final Formulario ----------------------------• */
@@ -749,6 +752,11 @@ footer .container .sec p {
 
     .containerFormulario form button {
         justify-self: center;
+    }
+
+    #agregarFormulario {
+        color: #2a2294;
+
     }
 
 }
