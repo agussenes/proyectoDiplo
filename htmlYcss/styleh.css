@@ -505,6 +505,8 @@ footer .container .sec p {
 /* •----------------- Inicio Formulário -----------------• */
 
 .containerFormulario {
+    display: flex;
+    flex-direction: column;
     padding: 0.6rem;
     background: linear-gradient(45deg, #e6f093, #0f472a, #f53f3f);
 
@@ -576,17 +578,101 @@ footer .container .sec p {
 }
 
 #productosAgregados {
+    display: block;
     background-color: #5449e7;
-    width: 12rem;
+    border-radius: 15px;
+    width: 50%;
     height: auto;
     padding: 2rem;
     list-style: none;
+    box-shadow: 4px 4px 10px #000;
 }
+
+#productosAgregados li{
+    margin: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+#productosAgregados img{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    
+}
+
+#productosAgregados h2{
+    font-size: 38px;
+    text-align: center;
+}
+
+#productosAgregados p{
+    text-align: center;
+    font-size: 26px;
+    
+}
+
 
 .containerFormsProductos {
     background-color: #5449e7
 }
 
+.containerFormulario h2{
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+
+#buttonAgregarProducto{
+    background-color: #c9f1d3;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000000;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    box-shadow: 4px 4px 8px #001105;
+}
+
+#buttonAgregarProducto:hover{
+    background-color: rgb(0, 179, 15);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#eliminarProducto{
+    background-color: #136327;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    box-shadow: 4px 4px 8px #001105;
+}
+
+
+#eliminarProducto:hover{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.containerButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+}
 
 /* •------------------------------ Final Formulario ----------------------------• */
 
