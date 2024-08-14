@@ -576,11 +576,14 @@ footer .container .sec p {
 }
 
 #productosAgregados {
-    background-color: #2a2294;
+    background-color: #5449e7;
+    width: 12rem;
+    height: auto;
+    padding: 2rem;;
 }
 
 .containerFormsProductos {
-    background-color: #2a2294;
+    background-color: #5449e7
 }
 
 
