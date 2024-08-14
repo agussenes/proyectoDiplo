@@ -98,48 +98,116 @@
 
 
 
-document.getElementById('agregarProducto').addEventListener('submit', function (event) {
-    event.preventDefault();
-    const nombre = document.getElementById('nombre').value;
-    const codigo = document.getElementById('codigo').value;
+// document.getElementById('agregarProducto').addEventListener('submit', function (event) {
+//     event.preventDefault();
+//     const nombre = document.getElementById('nombre').value;
+//     const codigo = document.getElementById('codigo').value;
+//     const imgProducto = document.getElementById('imgProducto');
+//     const precioProducto = document.getElementById('precioProducto').value;
+//     const descripcionProducto = document.getElementById('descripcionProducto').value;
+
+
+
+
+//     const productos = {
+//         nombre: nombre,
+//         codigo: codigo,
+//         imgProducto: imgProducto,
+//         precioProducto: precioProducto,
+//         descripcionProducto: descripcionProducto,
+
+//     }
+
+//     addProductToList(productos);
+
+//     document.getElementById('agregarProducto').reset();
+
+
+
+
+
+//     console.log('agregarProducto')
+//     console.log('productos.nombre')
+
+
+// });
+
+
+// function addProductToList(product) {
+//     const productList = document.getElementById('containerFormsProductos');
+
+//     Crear un nuevo elemento de lista
+//     const div = document.createElement('div');
+//     li.textContent = ${product.nombre} - $${product.precioProducto}: ${product.descripcionProducto};
+
+//     Añadir el nuevo elemento a la lista
+//     productList.appendChild(div);
+// }
+
+
+
+
+
+// agregarProducto.addEventListener('submit', (e) =>{
+//     e.preventDefault(); 
+
+
+//     const tareaTexto = nombre.value;
+//     const tareaTexto1 = codigo.value;
+//     const tareaTexto2 = imgProducto.value;
+//     const tareaTexto3 = precioProducto.value;
+//     const tareaTexto4 = descripcionProducto.value;
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const agregarProducto = document.getElementById('agregarProducto');
+    const nombre = document.getElementById('nombre');
+    const codigo = document.getElementById('codigo');
     const imgProducto = document.getElementById('imgProducto');
-    const precioProducto = document.getElementById('precioProducto').value;
-    const descripcionProducto = document.getElementById('descripcionProducto').value;
+    const precioProducto = document.getElementById('precioProducto');
+    const descripcionProducto = document.getElementById('descripcionProducto');
+    const productosAgregados = document.getElementById('productosAgregados');
+    const eliminarProducto = document.getElementById('eliminarProducto');
+
+
+    agregarProducto.addEventListener('click', () => {
+        const nombre = document.querySelector('#nombre').value;
+        const codigo = document.querySelector('#codigo').value;
+        const imgProducto = document.querySelector('#imgProducto').value;
+        const precioProducto = document.querySelector('#precioProducto').value;
+        const descripcionProducto = document.querySelector('#descripcionProducto').value;
+        const producto = {
+            nombre: nombre,
+            codigo: codigo,
+            precioProducto: precioProducto,
+            descripcionProducto: descripcionProducto,
+        }
+
+        const mostrarProducto = document.createElement('li');
+        mostrarProducto.textContent = producto;
+        productosAgregados.appendChild(mostrarProducto);
+    })
 
 
 
+    productosAgregados.addEventListener('click', (e) => {
+        if (e.target.tagName === "LI") {
+            e.target.classList.toggle('completada');
+            e.target.style.textDecoration = 'line-through';
+        }
 
-    const productos = {
-        nombre: nombre,
-        codigo: codigo,
-        imgProducto: imgProducto,
-        precioProducto: precioProducto,
-        descripcionProducto: descripcionProducto,
+    })
 
+
+    eliminarProducto.addEventListener('click', (e) => {
+        const tareasCompletadas = productosAgregados.querySelectorAll('li.completada');
+        tareasCompletadas.forEach((nombre) => {
+            nombre.remove();
+        })
     }
 
-    addProductToList(productos);
+    )
 
-    document.getElementById('agregarProducto').reset();
-
-
-
-
-
-    console.log('agregarProducto')
-    console.log('productos.nombre')
-    
-
-});
-
-
-function addProductToList(product) {
-    const productList = document.getElementById('containerFormsProductos');
-
-    // Crear un nuevo elemento de lista
-    const div = document.createElement('div');
-    li.textContent = ${product.nombre} - $${product.precioProducto}: ${product.descripcionProducto};
-
-    // Añadir el nuevo elemento a la lista
-    productList.appendChild(div);
-}
+})
