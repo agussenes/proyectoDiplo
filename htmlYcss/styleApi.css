@@ -1,3 +1,15 @@
+.secProductosApi{
+    background-color:#8078E9 ;
+}
+
+.secProductosApi h2{
+    color: #ffffff;
+    font-weight:700 ;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 60px;
+}
+
 #productosApi{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -25,17 +37,29 @@
     background-color: #f8f676;
 }
 
+.producto-container button:hover{
+    font-size: 22px;
+    background-color: #8078E9;
+    color: #ffffff;
+}
+
 .producto-container img {
-    width: 100PX;
+    width: 150px;
     height: auto;
 }
 
 .producto-container h3 {
     font-size: 1.5em;
     margin: 10px 0;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .producto-container p {
     font-size: 1em;
     color: #555;
+    padding-right: 30px;
+    padding-left: 30px;
 }

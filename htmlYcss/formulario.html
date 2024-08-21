@@ -25,151 +25,126 @@
         <header>
 
             <div id="brand">
-               <a href="#"><img src="../imagenes/loco connombreOK.png" alt="Cururu"></a>
+                <a href="#"><img src="../imagenes/loco connombreOK.png" alt="Cururu"></a>
             </div>
-               
-    
+
+
             <nav id="navBar">
-                 
+
                 <div id="menuIcon">
                     <i class="fas fa-bars"></i>
                 </div>
-        
+
                 <ul id="navLinks">
-        
+
                     <li><a href="#"><i class="fa-solid fa-frog"></i> Inicio</a></li>
                     <li><a href="#"><i class="fa-solid fa-store"></i> Productos</a></li>
                     <li><a href="#"><i class="fa-solid fa-people-group"></i> Nosotros</a></li>
                     <li><a href="#"><i class="fa-solid fa-headset"></i></i> Contacto</a></li>
                     <li><a href="#"><i class="fa-regular fa-circle-user"></i> Usuário</a></li>
                     <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></i> Carrito</a></li>
-        
+
                 </ul>
-        
+
             </nav>
-    
+
         </header>
 
-       <!--  <h2>Crear Nuevo Producto</h2>
-        <form id="productForm">
-            <label for="productName">Nombre del Producto:</label><br>
-            <input type="text" id="productName" name="productName" required><br><br>
-            
-            <label for="productPrice">Precio del Producto:</label><br>
-            <input type="number" id="productPrice" name="productPrice" required><br><br>
-            
-            <label for="productDescription">Descripción del Producto:</label><br>
-            <textarea id="productDescription" name="productDescription" required></textarea><br><br>
-            
-            <button type="submit">Crear Producto</button>
-        </form>
-        
-        <h2>Lista de Productos</h2>
-        <ul id="productList"></ul>  -->
-    
+    <section class="secFormulario">
 
-     <section class="sectionForms">   
         <div class="containerFormulario">
 
-            <h2>CREAR NUEVO PRODUCTO</h2>
-            <form id="agregarProducto"> 
+            <form>
                 <label for="nombre">Nombre del Producto</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto" required><br><br>
               
-                <label for="codigo">Código del Produto</label>
-                <input type="text" id="codigo" name="codigo" placeholder="AAA000" required></input><br><br>
+                <label for="codigoProducto">Código del Produto</label>
+                <input type="text" id="codigo" name="codigoProducto" placeholder="AAA000" required></input><br><br>
 
-                <label for="imgProducto">Imagen del producto</label>
-                <input type="file" id="imgProducto" name="imgProducto" placeholder="Inserte la imagen"><br><br>
-            
-                <label for="precioProducto">Precio</label>
-                <input type="text" id="precioProducto" name="precioProducto" placeholder="$ 000.000" required><br><br>
+                <label for="ImagenProducto">Imagen del producto</label>
+                <input type="file" id="imgProducto" name="img producto" placeholder="Inserte la imagen" required><br><br>
 
-                <label for="descripcionProducto">Descripción</label>
-                <input type="text" id="descripcionProducto" name="descripcionProducto" placeholder="Descripción del producto" required><br><br>
-                
-                
-                <button onclick="click" type="submit"> Agregar Producto </button>
+                <label for="Descripcion">Precio</label>
+                <input type="text" id="precioProducto" name="Precio del Producto" placeholder="$ 000,000.00" ><br><br>
+
+                <label for="Descripcion">Descripción</label>
+                <input type="text" id="descripcionProducto" name="Descripcion Producto" placeholder="Descripción del producto" ><br><br>
+
         
-                </form>
-
-                <h2>Lista de Productos</h2>
-
-                <ul id="productosAgregados" form="agregarProducto"></ul>
+                <button type="submit"> Agregar Producto </button>
         
-                <button id="eliminarProducto" form="agregarProducto"> Eliminar Producto </button>
-            
-            
+            </form>
+
         </div>
 
-    </section> 
+    </section>
 
 
-    <footer>
-        <div class="container">
-            <div class="sec QuienesSomos">
-                <h2>Quienes Somos</h2>
-                <p>En Cururu, somos un equipo apasionado por la educación y el diseño, dedicados a crear juegos
-                    Montessori de madera y muebles personalizados.
-                    Nuestra misión es fomentar el desarrollo infantil a través de materiales educativos de alta calidad
-                    y diseños únicos que inspiran el aprendizaje y la creatividad.
-                    En Cururu, cada pieza es creada con amor y dedicación, pensando en el bienestar y el crecimiento de
-                    los más pequeños.
-                    ¡Únete a nosotros y descubre un mundo de posibilidades para el aprendizaje y el juego!</p>
-                <ul class="sci">
-                    <li><a hreft="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a hreft="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a hreft="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a hreft="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="sec atajos">
-                <h2>Atajos</h2>
-                <ul>
-                    <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">terminos & condiciones </a></li>
-                    <li><a href="#">politica de privacidad</a></li>
-                    <li><a href="#">contacto</a></li>
+        <footer>
+            <div class="container">
+                <div class="sec QuienesSomos">
+                    <h2>Quienes Somos</h2>
+                    <p>En Cururu, somos un equipo apasionado por la educación y el diseño, dedicados a crear juegos
+                        Montessori de madera y muebles personalizados.
+                        Nuestra misión es fomentar el desarrollo infantil a través de materiales educativos de alta
+                        calidad
+                        y diseños únicos que inspiran el aprendizaje y la creatividad.
+                        En Cururu, cada pieza es creada con amor y dedicación, pensando en el bienestar y el crecimiento
+                        de
+                        los más pequeños.
+                        ¡Únete a nosotros y descubre un mundo de posibilidades para el aprendizaje y el juego!</p>
+                    <ul class="sci">
+                        <li><a hreft="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a hreft="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a hreft="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a hreft="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec atajos">
+                    <h2>Atajos</h2>
+                    <ul>
+                        <li><a href="#">Quienes Somos</a></li>
+                        <li><a href="#">terminos & condiciones </a></li>
+                        <li><a href="#">politica de privacidad</a></li>
+                        <li><a href="#">contacto</a></li>
 
-                </ul>
+                    </ul>
+                </div>
+                <div class="sec atajos">
+                    <h2>Productos</h2>
+                    <ul>
+                        <li><a href="#">Muebles personalizados</a></li>
+                        <li><a href="#">Muebles</a></li>
+                        <li><a href="#">Juegos Montessori</a></li>
+                        <li><a href="#">Por mayor</a></li>
+                    </ul>
+                </div>
+                <div class="sec contacto">
+                    <h2>Contacto</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span>Mendiolaza, Cordoba-Argentina</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:+543515555555">+54 3515555555</a><br>
+                                <a href="tel:+543515555555">+54 3515555555</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:cururu@gmail.com">cururu@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="sec atajos">
-                <h2>Productos</h2>
-                <ul>
-                    <li><a href="#">Muebles personalizados</a></li>
-                    <li><a href="#">Muebles</a></li>
-                    <li><a href="#">Juegos Montessori</a></li>
-                    <li><a href="#">Por mayor</a></li>
-                </ul>
-            </div>
-            <div class="sec contacto">
-                <h2>Contacto</h2>
-                <ul class="info">
-                    <li>
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span>Mendiolaza, Cordoba-Argentina</span>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <p><a href="tel:+543515555555">+54 3515555555</a><br>
-                            <a href="tel:+543515555555">+54 3515555555</a>
-                        </p>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <p><a href="mailto:cururu@gmail.com">cururu@gmail.com</a></p>
-                    </li>
-                </ul>
-            </div>
+        </footer>
+        <div class="copyrightsec">
+            <p>&copy; Agus - Noe - Patri. Todos los derechos reservados</p>
         </div>
-    </footer>
-    <div class="copyrightsec">
-        <p>&copy; Agus - Noe - Patri. Todos los derechos reservados</p>
-    </div>
 
-
-    <script src="../js/formulario.js"></script>
-
+    <script src="js.js"></script>
 </body>
 
 </html>
